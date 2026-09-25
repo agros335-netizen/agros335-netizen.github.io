@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agros335-netizen.github.io/sitemap.xml
