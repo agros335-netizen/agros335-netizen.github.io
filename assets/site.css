@@ -44,3 +44,24 @@ h2{font-size:clamp(2rem,3vw,3.2rem)}
 .gallery figcaption{font-size:16px;line-height:1.6}.gallery figcaption span{font-size:14px}
 .photo-label span:first-child{font-weight:600}
 @media(max-width:700px){.hero h1{font-size:clamp(2.5rem,9vw,3.7rem)}.services .service h3{font-size:22px}.gallery figcaption{font-size:15px}.gallery figcaption span{font-size:13px}}
+
+.location-map{margin-top:40px}.map-link{display:block;position:relative;overflow:hidden;border:1px solid #ffffff40}.map-link img{width:100%;height:auto;min-height:260px;object-fit:cover}.map-link span{position:absolute;bottom:20px;right:20px;background:var(--ink);color:white;padding:14px 20px;font-size:14px;font-weight:600}.map-link:hover span{background:var(--orange)}.map-credit{font-size:11px;margin:8px 0 0;color:#d0d9dd}.map-credit a{text-decoration:underline}@media(max-width:700px){.map-link span{bottom:12px;right:12px;padding:12px;font-size:12px}}
+
+.contact-location-row{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,1.5fr);gap:45px;align-items:center;margin-top:35px}.contact-location-row .office-hours{margin:0;display:block}.contact-location-row .office-hours p+p{margin-top:18px}.contact-location-row .location-map{margin:0}.contact-location-row .map-link img{height:280px;min-height:0}@media(max-width:700px){.contact-location-row{grid-template-columns:1fr;gap:25px}.contact-location-row .map-link img{height:250px}}
+
+.contact-location-row{grid-template-columns:minmax(240px,1fr) minmax(0,1.5fr)}.contact-location-row .location-map{width:300px;max-width:100%}.contact-location-row .map-link img{height:auto;min-height:0;aspect-ratio:1/1;object-fit:cover}.contact-location-row .map-link span{right:12px;bottom:12px;padding:12px;font-size:12px}@media(max-width:700px){.contact-location-row{grid-template-columns:1fr}}
+
+/* Compact contact layout: introduction and hours beside the map. */
+.contact.section{display:grid;grid-template-columns:minmax(0,1fr) 260px;column-gap:45px;padding-top:45px;padding-bottom:40px}
+.contact>div:first-child{grid-column:1;grid-row:1}
+.contact .eyebrow{margin-bottom:14px}
+.contact h2{margin-bottom:14px}
+.contact-intro{margin-bottom:20px}
+.contact-location-row{display:contents}
+.contact-location-row .office-hours{grid-column:1;grid-row:2;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline}
+.contact-location-row .office-hours h3{width:100%;margin-bottom:0;font-size:18px}
+.contact-location-row .office-hours p+p{margin-top:0}
+.contact-location-row .location-map{grid-column:2;grid-row:1 / span 2;width:260px;justify-self:end;align-self:center}
+.contact-grid{grid-column:1/-1;margin-top:24px;padding-top:20px;gap:25px}
+.contact-grid .label{margin-bottom:8px}
+@media(max-width:700px){.contact.section{grid-template-columns:1fr;padding-top:35px;padding-bottom:35px;row-gap:15px}.contact-location-row .location-map{grid-column:1;grid-row:3;width:230px}.contact-grid{grid-row:4;margin-top:8px}.contact-intro{margin-bottom:0}}
