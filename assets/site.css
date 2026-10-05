@@ -11,3 +11,23 @@
 .fleet-quote{margin-top:35px}.office-hours{margin-top:35px;display:flex;flex-wrap:wrap;gap:20px 45px;align-items:baseline}.office-hours h3{font-size:20px}.office-hours p{font-size:14px;line-height:1.8;margin:0}.office-hours strong{font-weight:600}
 
 .footer-certification{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.footer-partner{gap:32px}.footer-partner .anav-logo{width:150px;height:auto;object-fit:contain}
+
+/* Dedicated service blocks; photographs can be added inside each article. */
+.services{grid-template-columns:repeat(2,minmax(0,1fr));border:0;gap:24px}
+.services .service{padding:34px;border:1px solid var(--line);background:#eceee7}
+.services .service-0{grid-column:1/-1;background:var(--ink);color:white;padding:40px}
+.services .service-0 p{color:#d0d9dd;max-width:750px}
+.services .service p{max-width:none}
+.services .service h3{font-family:var(--serif);font-weight:400;font-size:30px;margin-bottom:20px}
+.school-towns{padding-left:18px;font-size:14px;line-height:1.9;margin-bottom:0}
+@media(max-width:700px){.services{grid-template-columns:1fr}.services .service{padding:26px}.services .service h3{font-size:27px}}
+
+.service-photo{margin:-34px -34px 30px}.service-photo img{width:100%;height:auto;aspect-ratio:2752/1536;object-fit:contain}.services{align-items:stretch}@media(max-width:700px){.service-photo{margin:-26px -26px 25px}}
+
+.service-photo img{aspect-ratio:4/3;object-fit:cover}.service-2 .service-photo img{object-position:center 65%}
+
+.services .service-0{display:grid;grid-template-columns:1fr 1fr;padding:0;overflow:hidden;align-items:center}
+.service-0 .service-photo{margin:0}
+.service-0 .service-photo img{aspect-ratio:4/3;object-position:left center}
+.service-0 .service-copy{padding:38px}
+@media(max-width:700px){.services .service-0{grid-template-columns:1fr}.service-0 .service-copy{padding:26px}}
