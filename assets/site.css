@@ -31,3 +31,16 @@
 .service-0 .service-photo img{aspect-ratio:4/3;object-position:left center}
 .service-0 .service-copy{padding:38px}
 @media(max-width:700px){.services .service-0{grid-template-columns:1fr}.service-0 .service-copy{padding:26px}}
+
+/* Typography preview: self-hosted Inter. */
+@font-face{font-family:Inter;src:url('/assets/fonts/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+:root{--serif:Inter,Arial,Helvetica,sans-serif}
+body{font-family:Inter,Arial,Helvetica,sans-serif}
+h1,h2{font-weight:600;letter-spacing:-.04em;line-height:1.12}
+h1{font-size:clamp(2.6rem,4.5vw,4.8rem)}
+h2{font-size:clamp(2rem,3vw,3.2rem)}
+.contact h2{font-size:clamp(2.3rem,4.3vw,4.3rem)}
+.services .service h3{font-weight:600;letter-spacing:-.025em;font-size:24px}
+.gallery figcaption{font-size:16px;line-height:1.6}.gallery figcaption span{font-size:14px}
+.photo-label span:first-child{font-weight:600}
+@media(max-width:700px){.hero h1{font-size:clamp(2.5rem,9vw,3.7rem)}.services .service h3{font-size:22px}.gallery figcaption{font-size:15px}.gallery figcaption span{font-size:13px}}
