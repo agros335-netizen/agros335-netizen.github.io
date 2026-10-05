@@ -9,3 +9,5 @@
 
 
 .fleet-quote{margin-top:35px}.office-hours{margin-top:35px;display:flex;flex-wrap:wrap;gap:20px 45px;align-items:baseline}.office-hours h3{font-size:20px}.office-hours p{font-size:14px;line-height:1.8;margin:0}.office-hours strong{font-weight:600}
+
+.footer-certification{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.footer-partner{gap:32px}.footer-partner .anav-logo{width:150px;height:auto;object-fit:contain}
